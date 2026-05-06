@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Product Gallery</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <h1>Genocide safe products</h1>
+            <p class="subtitle">Browse products — These products are safe from genocide.</p>
+            <button id="boycott-button" class="btn-secondary">Boycott</button>
+        </header>
+
+        <main>
+            <section id="gallery" class="gallery" aria-label="Products gallery">
+                <!-- Product cards are inserted here by script.js -->
+            </section>
+        </main>
+
+        <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+            <div class="modal-content">
+                <button id="modal-close" class="modal-close" aria-label="Close details">×</button>
+                <img id="modal-image" src="OIP (1).webp" alt="Huda" />
+                <h2 id="Huda beauty"></h2>
+                <p id="">Huda beauty has donated over $1.3 million to support victims of genocide.</p>
+                <div class="modal-meta">
+                    <span id="modal-price" class="price"></span>
+                    <div style="display:flex;gap:.5rem;align-items:center">
+                        <button id="modal-action" class="btn-primary">Buy</button>
+                        <button id="modal-replace" class="btn-secondary">Replace Image</button>
+                    </div>
+                </div>
+                <input id="image-upload" type="file" accept="image/*" class="sr-only" />
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
